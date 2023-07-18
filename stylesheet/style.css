@@ -111,7 +111,7 @@
 
 .section_footer{
   width: 100%;
-  min-height: 100px;
+  min-height: 10px;
   background-color: #BF0A0A;
   position: relative;
   bottom: 0;
@@ -138,7 +138,7 @@
 }
 .main_content::before{
     content: "";
-    width: 10px;
+    width: 5px;
     height: 50%;
     position: absolute;
     left: 0;
@@ -147,7 +147,7 @@
 }
 .main_content::after{
     content: "";
-    width: 10px;
+    width: 5px;
     height: 50%;
     position: absolute;
     left:  0;
@@ -221,6 +221,9 @@
 
 
 @media only screen and (max-width: 768px) {
+  .top_less {
+    margin: 0px !important;
+  }
     table{
       font-size: 14px;
       margin-right: 10px;
