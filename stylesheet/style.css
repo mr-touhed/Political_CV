@@ -115,11 +115,13 @@
     overflow: hidden;
     margin-top: 3rem;
 }
-
+.page_logo{
+    max-width: 200px;
+}
 .main_content::before{
     content: "";
     width: 10px;
-    height: 75vh;
+    height: 50%;
     position: absolute;
     left: 0;
     top: 0;
@@ -128,7 +130,7 @@
 .main_content::after{
     content: "";
     width: 10px;
-    height: 75vh;
+    height: 50%;
     position: absolute;
     left:  0;
     bottom: 0;
@@ -136,8 +138,8 @@
 }
 .cercle{
     display: inline-block;
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
     background-color:#BF0A0A;
     border-radius: 50%;
     position: absolute;
@@ -159,9 +161,9 @@
         
     }
     .bottom-title h2{
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: bold;
-        
+        margin-top: 0.9rem;
     }
     .bottom-title{
         bottom: -41px;
@@ -178,5 +180,10 @@
         padding: 0px 0px;
         gap:1rem
     }
-       
+    .cercle{
+        width: 100px;
+        height: 100px;
+        left: -50px;
+        top: -50px;
+    }
 }
