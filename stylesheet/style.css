@@ -224,6 +224,9 @@
   .top_less {
     margin: 0px !important;
   }
+  #spotlight .contain, #spotlight .cover{
+    height: auto!important;
+  }
     table{
       font-size: 14px;
       margin-right: 10px;
