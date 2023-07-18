@@ -167,9 +167,12 @@
         bottom: -41px;
     }
     .party_icon{
-        width: 100px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         
+    }
+    .party_icon:last-child{
+        width: 100px;
     }
     .logo_section{
         padding: 0px 0px;
