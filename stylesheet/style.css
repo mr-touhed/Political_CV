@@ -220,7 +220,7 @@
 
 @media only screen and (max-width: 768px) {
     table{
-      font-size: 1.5em;
+      font-size: 1em;
     }
     .person_section{
         flex-direction: column;
