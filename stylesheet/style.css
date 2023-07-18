@@ -78,11 +78,10 @@
 .party{
     width: 600px;
 }
-.title{
-    font-size: 4rem;
-    word-spacing: 2rem;
-}
 
+.heading__title{
+  font-size: 4em;
+}
 .person_img{
     width: 450px;
     height: 450px;
@@ -105,8 +104,22 @@
 }
 
 
+.section_footer{
+  width: 100%;
+  min-height: 100px;
+  background-color: #BF0A0A;
+  position: relative;
+  bottom: 0;
+}
+.footer_text{
+  font-size: 3rem;
+}
 
-
+.footer_person_img{
+  margin-bottom: -30px;
+  z-index: 3;
+  border-color: #BF0A0A;
+}
 /* main content  */
 
 .main_content{
@@ -138,8 +151,8 @@
 }
 .cercle{
     display: inline-block;
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
     background-color:#BF0A0A;
     border-radius: 50%;
     position: absolute;
@@ -148,14 +161,40 @@
     
 }
 
+.spotlight-group{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+
+}
+.spotlight-group > a {
+  border-radius: 5px;
+  max-height: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 6px 1px hsla(0, 0%, 0%, 0.589);
+}
+
+.title{
+  font-size: 4em;
+  background-image: linear-gradient(#087F1B, #BF0A0A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 1em 0;
+}
 
 
+.right_logo{
+  right:  0;
 
-
-
-
-
-
+}
+.center_logo{
+  display: flex;
+  margin: 0 auto;
+}
+.footer_Banner{
+  max-width: 60vw;
+  margin: 30px auto;
+}
 .close {
     font-size: 1.5rem;
   }
@@ -178,10 +217,7 @@
     .person_section{
         flex-direction: column;
     }
-    .title{
-        font-size: 2rem;
-        word-spacing: 0rem;
-    }
+    
     .person_img{
         width: 300px;
         height: 300px;
@@ -212,5 +248,14 @@
         height: 100px;
         left: -50px;
         top: -50px;
+    }
+    .spotlight-group{
+      display: grid;
+      grid-template-columns:1fr;
+      gap:10px;
+    
+    }
+    .footer-info{
+      flex-direction: column;
     }
 }
